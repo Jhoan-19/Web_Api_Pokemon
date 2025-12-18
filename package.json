@@ -1,0 +1,11 @@
+{
+  "name": "poke-api-root",
+  "private": true,
+  "description": "Root package.json delegando scripts al subdirectorio todo/ para conveniencia",
+  "scripts": {
+    "dev": "[ -d todo/node_modules ] || npm --prefix todo install && npm --prefix todo run dev",
+    "start": "[ -d todo/node_modules ] || npm --prefix todo install && npm --prefix todo run start",
+    "build": "[ -d todo/node_modules ] || npm --prefix todo install && npm --prefix todo run build",
+    "test": "[ -d todo/node_modules ] || npm --prefix todo install && npm --prefix todo run test"
+  }
+}
